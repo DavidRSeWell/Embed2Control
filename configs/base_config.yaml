@@ -1,0 +1,19 @@
+
+save_path: "/Users/davidsewell/Experiments/e2c/"
+
+Data:
+  path: "/Users/davidsewell/Projects/Embed2Control/embed2control/data/" # Input Data
+  samples: 10000 # Number of samples to use for training
+  embedding_model_path: "/Users/davidsewell/Experiments/e2c/embedding_base_model" # If supplied than a new model will not be trainined
+  dynamics_model_path: "" # If supplied than a new model will not be trainined
+
+# Assumes that you want to use Adam optimizer
+Model: 
+  input_dim: 1600
+  hidden_dim: 256
+  z_dim: 2
+  lr: 0.001
+  train_split: 0.90
+  test_every: 1
+  batch_size: 4
+  epochs: 50
